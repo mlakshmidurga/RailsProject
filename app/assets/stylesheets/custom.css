@@ -1,0 +1,53 @@
+body{
+  background-color: #ddd;
+}
+.logo .header{
+  color:white;
+  padding:15px 50px;
+}
+.heading{
+  text-align: center;
+  color:white;
+}
+.flower-gape {
+	text-align: center;
+	padding-top: 10px;
+  
+}
+.well-top {
+	margin-top: 50px;
+}
+.carousel{
+	margin-right: -15px;
+  margin-left: -15px;
+}
+.tales{
+  width:100%;
+  height:200px;
+}
+.h2{
+	text-align: center;
+}
+.sign_in {
+	line-height:40px;
+  margin: 0 5% 0 0;
+  color:white;
+}
+.sign_in a{
+  text-decoration: none;
+  padding:8px;
+  color:white;
+}
+.new{
+  padding-left: 15px;
+}
+.footer {
+  left:0px;
+  bottom:0px;
+  width:100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom:0px;
+  color:white;
+  border-radius: 0px;
+}

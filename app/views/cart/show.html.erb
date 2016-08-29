@@ -1,0 +1,17 @@
+<div class="col-md-12">
+	<p>
+	  <strong>Name:</strong>
+	  <%= @flower.name %>
+	</p> 
+	<p>
+	  <strong>Description:</strong>
+	  <%= @flower.description %>
+	</p> 
+	<p>
+	  <strong>ImagePrice: </strong>
+	  <%= @flower.price %>
+	  <%= image_tag @flower.image, class: "thumbnail" %>
+	</p> 
+	<span><%= link_to 'Back', flowers_path, class: "btn btn-default"%></span>
+	<span><%= link_to 'Empty Cart', cart_path, class: "btn btn-default"%> </span>
+</div>

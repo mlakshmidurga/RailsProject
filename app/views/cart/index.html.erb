@@ -1,0 +1,24 @@
+
+<h1>Your Cart</h1>
+
+  <% @cart.each do |id| %>
+  <% @flower = Flower.find_by_id(id) %>
+   <% total =0 %>
+    <div class="col-md-12">
+	<p>
+	  <strong>Name:</strong>
+	  <%= @flower.name %>
+	</p> 
+	<p>
+	  <strong>Description:</strong>
+	  <%= @flower.description %>
+	</p> 
+	<p>
+	  <strong>ImagePrice: </strong>
+	  <%= @flower.price %>
+	  <%= image_tag @flower.image, class: "thumbnail" %>
+	</p> 
+ 
+  <% end %>
+  <%= link_to 'Back', flowers_path, class: "btn btn-default"%>
+  </div>

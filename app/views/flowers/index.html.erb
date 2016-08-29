@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <%= render 'carousel' %>
+</div>
+    <% @flowers.each do |flower| %>
+    <div class="col-md-3 flower-gape">
+      <div class="thumbnail">
+        <div><img src="<%= flower.image %>" class="img-responsive center-block"></div>
+        <div>
+          <span><%= flower.name %></span>
+        </div>
+        <div>
+          <span>price : <%= flower.price %></span>
+        </div>
+        
+          <span><%= link_to 'View', flower_path(flower), class: "btn btn-default btn-sm" %></span>
+          <span><%= link_to 'Edit', edit_flower_path(flower), class: "btn btn-default btn-sm" %></span>
+          <span><%= link_to 'Destroy', flower, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-default btn-sm" %></span>
+       
+      </div>
+    </div>
+    <% end %>
+<div class="new"><%= link_to 'New Flower', new_flower_path, class: "btn btn-default btn" %></div>
